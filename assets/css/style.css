@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'TiemposHeadline';
+  font-weight: 400;
+  src: url('../fonts/TiemposHeadline-Regular.otf');
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  font-weight: 600;
+  src: url('../fonts/TiemposHeadline-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url('../fonts/SourceSansPro-Light.woff') format('woff'), url('../fonts/SourceSansPro-Light.woff2') format('woff2'), url('../fonts/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url('../fonts/SourceSansPro-Regular.woff') format('woff'), url('../fonts/SourceSansPro-Regular.woff2') format('woff2'), url('../fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  src: url('../fonts/SourceSansPro-SemiBold.woff') format('woff'), url('../fonts/SourceSansPro-SemiBold.woff2') format('woff2'), url('../fonts/SourceSansPro-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url('../fonts/SourceSansPro-Bold.woff') format('woff'), url('../fonts/SourceSansPro-Bold.woff2') format('woff2'), url('../fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #222b3d;
+  font-family: 'Lato';
+  color: #6b7e91;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background-color: #21b0ea;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 1em 2.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 1em;
+  font-family: "Source Sans Pro";
+}
+
+a.btn.g {
+  background-color: #00b78e;
+}
+
+header {
+  position: relative;
+  padding: 1em 2em;
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: #222b3d;
+}
+
+header:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  background: url("https://dropilchain.com/wp-content/uploads/2020/02/dropilchain.png") no-repeat 0 0;
+  background-size: contain;
+  width: 125px;
+  height: 50px;
+  float: left;
+}
+
+.links {
+  float: right;
+  padding: 15px 0;
+  display: none;
+}
+
+.links a {
+  margin-right: 2em;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Source Sans Pro";
+}
+
+.links a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.menu {
+  float: right;
+  width: 20px;
+  margin: 15px;
+  position: relative;
+}
+
+.menu .icon {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  filter: invert(1);
+  cursor: pointer;
+}
+
+.menu ul {
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  transition: .3s ease all;  
+  padding: 0;
+  position: absolute;
+  right: 0;  
+  z-index: 3;
+}
+
+.menu .icon:hover + ul, .menu:hover ul {
+  max-height: 200px;    
+  border: 1px solid #353e4c;  
+}
+
+.menu ul li a {
+  background-color: #1f2735;
+  padding: 1em 2em;
+  border-bottom: 1px solid #353e4c;
+  white-space: nowrap;
+  display: block;
+}
+
+.menu ul li:last-child a {
+  border-bottom: 0;
+}
+
+.main {
+  max-width: 1000px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 3em;
+}
+
+.title {
+  font-family: 'TiemposHeadline';
+  font-weight: 600;  
+  color: #fff;
+  font-size: 2rem;
+}
+
+.blocks {
+  margin-top: 3rem;
+}
+
+.blocks .block {
+  background-color: #1f2735;
+  padding: 1em 2em 6em;
+  border-radius: 6px;
+  border: 1px solid #353e4c;
+  margin: 0 auto 2em;
+  position: relative;
+  max-width: 450px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,.25);
+}
+
+.blocks .block h1 {
+  color: #fff;
+}
+
+.blocks .block p {
+  font-size: 1.1em;
+  line-height: 1.25em;
+  text-align: justify;
+}
+
+.blocks .block a.btn {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 991px) {
+  .links {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .desc {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+
+  .blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }  
+}
