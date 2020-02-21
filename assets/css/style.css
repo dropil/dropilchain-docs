@@ -1,16 +1,4 @@
 @font-face {
-  font-family: 'TiemposHeadline';
-  font-weight: 400;
-  src: url('../fonts/TiemposHeadline-Regular.otf');
-}
-
-@font-face {
-  font-family: 'TiemposHeadline';
-  font-weight: 600;
-  src: url('../fonts/TiemposHeadline-Medium.otf');
-}
-
-@font-face {
   font-family: 'Lato';
   src: url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.woff2') format('woff2'), url('../fonts/Lato-Regular.ttf') format('truetype');
 }
@@ -178,7 +166,7 @@ header:after {
 }
 
 .title {
-  font-family: 'TiemposHeadline';
+  font-family: 'Lato';
   font-weight: 600;  
   color: #fff;
   font-size: 2rem;
