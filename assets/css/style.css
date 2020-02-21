@@ -64,6 +64,7 @@ a.btn {
   color: #fff;
   margin-top: 1em;
   font-family: "Source Sans Pro";
+  white-space: nowrap;
 }
 
 a.btn.g {
