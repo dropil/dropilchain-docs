@@ -1,0 +1,4 @@
+RewriteEngine on
+Options +FollowSymlinks -MultiViews
+
+RewriteRule ^$ /index.html [R,L]
